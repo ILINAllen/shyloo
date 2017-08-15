@@ -10,7 +10,7 @@ public:
 	virtual ~testSessionFactory(){}
 	virtual ISLSession* SLAPI createSession(ISLChannel* poChannel)
 	{
-		return nullptr;
+	               	return nullptr;
 	}
 };
 

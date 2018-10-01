@@ -36,8 +36,8 @@ int ListenerReceiver::handleInputNotification(int fd){
 		else{
 			Channel* pChannel = Channel::create(_networkInterface, pNewEndPoint, _pPacketParser, _recvSize, _sendSize);
 			if (!pChannel){
-				pChannel->destroy();
-				pChannel->release();
+				//pChannel->destroy();
+				//pChannel->release();
 				return 0;
 			}
 
